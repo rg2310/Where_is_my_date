@@ -5,3 +5,34 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "Cleaning database..."
+Experience.destroy_all
+
+puts "Creating experiences..."
+tate = { name: "Date at the Tate", content: "Access the latest exhibition"}
+pizza_east = { name: "Pizza East", content: "56A Shoreditch High St, London E1 6PQ"}
+shard = { name: "shard", content: "blabla" }
+ronnie_scott = { name: "Ronnie Scott", content: "bla" }
+
+puts "Cleaning user database..."
+User.destroy_all
+
+puts "Creating new users..."
+tania = { first_name: "Tania", email: "email@google.com", password: "123456" }
+renee = { first_name: "Renee", email: "email1@google.com", password: "123456" }
+temi = { first_name: "Temi", email: "email2@google.com", password: "123456" }
+enora = { first_name: "Enora", email: "email3@google.com", password: "123456" }
+
+[tania, renee, temi, enora].each do |attributes|
+  user = User.create!(attributes)
+  puts "Created #{user.first_name}"
+end
+puts "Finished!"
+
+Experience.create!(user: User.last, name: "Date at the Tate")
+# [tate, pizza_east, shard, ronnie_scott].each do |attributes|
+#   experience = Experience.create!(attributes)
+#   experience.user = User.last
+#   puts "Created #{experience.name}"
+# end
+# puts "Finished!"
