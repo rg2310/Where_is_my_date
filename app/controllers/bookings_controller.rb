@@ -12,10 +12,18 @@ class BookingsController < ApplicationController
     @booking = Booking.new
   end
 
+  def destroy
+   #TODO
+  end
+
+  def update
+   #TODO
+  end
+
   private
 
   def experience_params
-    params.require(:booking).permit(:experience_id, :user_id, :date)
+    params.require(:booking).permit(:experience_id, :user_id :date)
   end
 
 end
