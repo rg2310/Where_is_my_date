@@ -8,11 +8,40 @@
 puts "Cleaning database..."
 Experience.destroy_all
 
-puts "Creating experiences..."
-tate = { name: "Date at the Tate", content: "Access the latest exhibition", price: 100, address: "Bankside, London SE1 9TG" }
-pizza_east = { name: "Pizza East", content: "56A Shoreditch High St, London E1 6PQ", price: 50, address: "56A Shoreditch High St, London E1 6JJ" }
-shard = { name: "shard", content: "blabla", price: 90, address: "32 London Bridge St, London SE1 9SG" }
+# puts "Creating experiences..."
+# tate = { name: "Date at the Tate", content: "Access the latest exhibition", price: 100, address: "Bankside, London SE1 9TG" }
+# pizza_east = { name: "Pizza East", content: "56A Shoreditch High St, London E1 6PQ", price: 50, address: "56A Shoreditch High St, London E1 6JJ" }
+# shard = { name: "shard", content: "blabla", price: 90, address: "32 London Bridge St, London SE1 9SG" }
 ronnie_scott = { name: "Ronnie Scott", content: "bla", price: 80, address: "47 Frith St, London W1D 4HT" }
+
+puts 'Creating experiences'
+Experience.create!(
+  name: "Date at the Tate",
+  content: "Access the latest exhibition",
+  price: 100, 
+  address: "Bankside, London SE1 9TG"
+)
+
+puts 'Creating experiences'
+Experience.create!(
+  name: "Pizza East", 
+  content: "56A Shoreditch High St, London E1 6PQ", 
+  price: 50, 
+  address: "56A Shoreditch High St, London E1 6JJ"
+)
+
+puts 'Creating experiences'
+Experience.create!(
+  name: "Pizza East", 
+  content: "56A Shoreditch High St, London E1 6PQ", 
+  price: 50, 
+  address: "56A Shoreditch High St, London E1 6JJ"
+)
+
+puts 'Creating experiences'
+Experience.create!(
+  name: "shard",
+  content: "blabla", price: 90, address: "32 London Bridge St, London SE1 9SG"
 
 puts "Cleaning user database..."
 User.destroy_all
