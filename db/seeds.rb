@@ -9,10 +9,10 @@ puts "Cleaning database..."
 Experience.destroy_all
 
 puts "Creating experiences..."
-tate = { name: "Date at the Tate", content: "Access the latest exhibition"}
-pizza_east = { name: "Pizza East", content: "56A Shoreditch High St, London E1 6PQ"}
-shard = { name: "shard", content: "blabla" }
-ronnie_scott = { name: "Ronnie Scott", content: "bla" }
+tate = { name: "Date at the Tate", content: "Access the latest exhibition", price: 100, address: "Bankside, London SE1 9TG" }
+pizza_east = { name: "Pizza East", content: "56A Shoreditch High St, London E1 6PQ", price: 50, address: "56A Shoreditch High St, London E1 6JJ" }
+shard = { name: "shard", content: "blabla", price: 90, address: "32 London Bridge St, London SE1 9SG" }
+ronnie_scott = { name: "Ronnie Scott", content: "bla", price: 80, address: "47 Frith St, London W1D 4HT" }
 
 puts "Cleaning user database..."
 User.destroy_all
@@ -29,10 +29,10 @@ enora = { first_name: "Enora", email: "email3@google.com", password: "123456" }
 end
 puts "Finished!"
 
-Experience.create!(user: User.last, name: "Date at the Tate")
-# [tate, pizza_east, shard, ronnie_scott].each do |attributes|
-#   experience = Experience.create!(attributes)
-#   experience.user = User.last
-#   puts "Created #{experience.name}"
-# end
-# puts "Finished!"
+# Experience.create!(user: User.last, name: "Date at the Tate")
+[tate, pizza_east, shard, ronnie_scott].each do |attributes|
+  experience = Experience.create!(attributes)
+  experience.user = User.last
+  puts "Created #{experience.name}"
+end
+puts "Finished!"
