@@ -1,0 +1,8 @@
+<h1>All Experiences</h1>
+
+<% @tasks.each do |taks|%>
+<h5> <%= tasks.name %>  </h5>
+<p> <%= tasks.description %>
+<%= tasks.price_per_night %>
+<%= tasks.number_of_guests %></p>
+<% end %>
