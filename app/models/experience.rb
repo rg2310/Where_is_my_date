@@ -5,5 +5,4 @@ class Experience < ApplicationRecord
   validates :address, presence: true
   validates :content, presence: true
   validates :price, presence: true
-  validates :number_of_participants, presence: true
 end
