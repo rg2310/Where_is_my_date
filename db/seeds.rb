@@ -22,7 +22,7 @@ user = User.create!(
 puts 'Creating experiences'
 Experience.create!(
   name: "Date at the Tate",
-  content: "Access the latest exhibition",
+  content: "Tate Modern is an art gallery located in London. It houses the United Kingdom's national collection of international modern and contemporary art. Visit the latest exhibition and enjoy a glass of champagne on the rooftop! ",
   price: 100,
   address: "Bankside, London SE1 9TG",
   user: user
@@ -30,16 +30,17 @@ Experience.create!(
 puts 'Creating experiences'
 Experience.create!(
   name: "Pizza East",
-  content: "56A Shoreditch High St, London E1 6PQ",
+  content: "In a former tea warehouse on the corner of Shoreditch High Street and Bethnal Green Road, Pizza East Shoreditch serves seasonal smalls, wood-oven dishes, pizzas and some of the best cured meats & cheese in London.
+  Enjoy a candlelight dinner and grab a cocktail at the Vermourth bar.",
   price: 50,
   address: "56A Shoreditch High St, London E1 6JJ",
   user: user
 )
 puts 'Creating experiences'
 Experience.create!(
-  name: "The Shard",
-  content: "blabla",
-  price: 90,
+  name: "Sky Lounge at The Shard",
+  content: "The elegant lounge offers a relaxed setting to unwind and socialise in style, while taking in breath-taking views of the London. Sky Lounge boasts a delectable menu of light bites, a luxury Sunday Brunch experience and an impressive selection of drinks including signature Veuve Clicquot cocktails to help toast to any occasion.",
+  price: 150,
   address: "32 London Bridge St, London SE1 9SG",
   user: user
 )
