@@ -1,4 +1,28 @@
 // Specific CSS for your home-page
-body {
- background-image: url("https://images.unsplash.com/photo-1518199266791-5375a83190b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80");
+// body {
+//  background-image: url("https://images.unsplash.com/photo-1518199266791-5375a83190b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80");
+// }
+
+.home_video {
+      width: 100%;
+}
+.homepage-text {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+
+.homepage-text {
+  position: absolute;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 64px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.homepage-text {
+  font-family: "Nunito", "Helvetica", "sans-serif";
+  letter-spacing: 9px;
 }
