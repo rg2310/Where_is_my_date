@@ -13,9 +13,11 @@ module WhereIsMyDate
       generate.helper false
       generate.test_framework :test_unit, fixture: false
     end
+
+    config.assets.paths << "#{Rails.root}/app/assets/videos"
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
-
+    config.assets.compile = true
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
