@@ -1,8 +1,24 @@
-<h1>All Experiences</h1>
-<%=console%>
+<%# <h1>All Experiences</h1>
+
 <% @experiences.each do |experience|%>
-<h5> <%= experiences.name %>  </h5>
-<p> <%= experiences.content %></p>
-<p> <%= experiences.price %></p>
-<p> <%= experiences.picture_url %></p>
-<% end %>
+<%# <h5> <%= experience.name %>
+<%# <p> <%= experience.content %>
+<%# <%= experience.price %>
+<%# <%= experience.picture_url %>
+<%# <% end %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <h1>All dating experiences</h1>
+      <ul class="list-group">
+        <% @experiences.each do |experience| %>
+          <li class="list-group-item">
+            <%= link_to experience.name, experience_path(experience) %>
+          </li>
+        <% end %>
+      </ul>
+      <%= link_to "Add a new Experience", new_experience_path, class: 'btn btn-primary' %>
+    </div>
+  </div>
+</div>
