@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "open-uri"
+
 puts "Cleaning database..."
 Experience.destroy_all
 # puts "Creating experiences..."
@@ -14,19 +16,25 @@ Experience.destroy_all
 # ronnie_scott = { name: "Ronnie Scott", content: "bla", price: 80, address: "47 Frith St, London W1D 4HT" }
 puts 'Creating 1 test user... pass testing'
 user = User.create!(
-  email: "testing1@testing.com",
+  email: "testing4@testing.com",
   password: "123456",
   first_name: "Temi",
   last_name: "Adaramewa"
 )
+
+file = URI.open('https://www.artnews.com/wp-content/uploads/2020/02/9384254a.jpg?resize=400,271')
+
 puts 'Creating experiences'
-Experience.create!(
+experience = Experience.create!(
   name: "Date at the Tate",
   content: "Access the latest exhibition",
   price: 100,
   address: "Bankside, London SE1 9TG",
   user: user
 )
+
+experience.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+
 puts 'Creating experiences'
 Experience.create!(
   name: "Pizza East",
@@ -46,9 +54,30 @@ Experience.create!(
 puts 'Creating experiences'
 Experience.create!(
 name: "Ronnie Scott",
-content: "bla",
+content: "European vanguard for jazz and blues from world's top musicians, in basement club with late bar. Enjoy some cocktails in an intimate atmosphere and some great jazz and blues music.",
 price: 80,
 address: "47 Frith St, London W1D 4HT",
+user: user
+)
+puts 'Creating experiences'
+Experience.create!(
+name: "Lapland wonders: watch the northern lights ",
+content: "After picking you up from the meeting point in the city center, we will depart the city to escape the light
+pollution and find clear skies for viewing the Northern Lights. We will choose the location based on the weather conditions
+prior to each tour so every night can bring a different experience",
+price: 500,
+address: "Tromsø, Norway",
+user: user
+)
+puts 'Creating experiences'
+Experience.create!(
+name: "A night of fun in Brooklyn: Eastville Comedy Club",
+content: "Eastville is the only bonafide comedy club in the borough of Brooklyn!
+Along with yummy homemade popcorn and candy. Eastville is a 120 seat comedy club located right by the Barclays Center,
+and downtown Brooklyn’s nightlife district! The club was founded by native New Yorkers with decades of experience in the comedy and bar business.
+Therefore, we pride ourselves in featuring the most experienced, popular, and hilarious comedians while also providing an authentic Brooklyn setting for our patrons.",
+price: 50,
+address: "487 Atlantic Ave Brooklyn, NY 11217",
 user: user
 )
 # puts "Cleaning user database..."
