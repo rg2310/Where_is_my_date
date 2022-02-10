@@ -8,8 +8,35 @@
       <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1">
         <h3> >> Book here! <<</h3>
-        <h3> >> Book here! <<</h3>
-        <h3> >> Book here! <<</h3>
+        <div class="col-5">
+         <div class="booking-form">
+            <h3>BOOKING</h3>
+            <div class="fields">
+             <form class = "simple_form new_booking" id="new_booking" novalidate="novalidate" action="experiences/1/bookings" accept-charset="UTF-8" method="post">
+              <input type="hidden" name="authenticity_token" value="mSiWdmcYEm/SA1QmjSexwT8HCxS+23pFtItdqoufdjh1WM555Eu/RjaFrA5j5NoZz/latc1LEmjX/u488pDSKA==">
+              <div class="form-group date required booking_start_date">
+               <label class="date required" for="booking_start_date">Start date <abbr title="required">
+                "Start date"
+                <abbr title="required">*</abbr>
+              </label>
+              <div class="d-flex flex-row justify-content-between align-items-center">
+                <input class="form-control mx-1 date required" type="date" name="booking[start_date]" id="booking_start_date">
+               </div>
+              </div>
+               <div class="form-group date required booking_end_date">
+                <label class="date required" for="booking_end_date">
+                 End date
+                 <abbr title="required">*</abbr>
+                </label>
+              </div>
+              <div class="form-group integer required booking_number_of_people"><label class="integer required" for="booking_number_of_people">Number of people <abbr title="required">*</abbr></label><input class="form-control numeric integer required inline-element" type="number" step="1" name="booking[number_of_people]" id="booking_number_of_people">
+               <label class="integer required" for="booking_number_of_people">Number of people <abbr title="required">*</abbr></label>
+                Number of people
+                <abbr title="required">*</abbr>
+                <label class="integer required" for="booking_number_of_people">Number of people <abbr title="required">*</abbr>
+               </label>
+>>>>>>> 855bc7398116eb6ce6ab0ef1ca87d078c21214a1
+
         </div>
       </div>
     </div>
