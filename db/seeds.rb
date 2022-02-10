@@ -21,7 +21,6 @@ user = User.create!(
   first_name: "Temi",
   last_name: "Adaramewa"
 )
-
 file = URI.open('https://www.artnews.com/wp-content/uploads/2020/02/9384254a.jpg?resize=400,271')
 
 puts 'Creating experiences'
