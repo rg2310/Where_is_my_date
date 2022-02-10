@@ -23,14 +23,24 @@
         <% @experiences.each do |experience| %>
           <div class="container">
   <%# <h2>Search our experiences below...</h2> %>
-  <div class="cards">
-  <div class="card-product">
+  <div class="card-trip">
+  <img src="https://www.tate.org.uk/sites/default/files/styles/width-600/public/tate_britain_exterior_1.jpg" />
+  <div class="card-trip-infos">
+    <div>
+      <h2>Date at the Tate</h2>
+      <p><%= experience.content %></p>
+    </div>
+    <h2 class="card-trip-pricing">£99.99</h2>
+  </div>
+</div>
+  <%# <div class="cards"> %>
+  <%# <div class="card-product">
       <img src="https://www.tate.org.uk/sites/default/files/styles/width-600/public/tate_britain_exterior_1.jpg"/>
   <div class="card-product-infos">
     <%# <h2><% @experiences.each do |experience| %>
-    <p><%= experience.content %></p>
-  </div>
-</div>
+    <%# <p><%= experience.content %></p>
+  <%# </div> %>
+<%# </div> %>
          <h2> <%= link_to experience.name, experience_path(experience) %> </h2>
         </div>
         </div>
