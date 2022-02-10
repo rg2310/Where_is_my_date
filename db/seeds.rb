@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 require "open-uri"
+
 puts "Cleaning database..."
 Experience.destroy_all
 # puts "Creating experiences..."
@@ -21,6 +22,7 @@ user = User.create!(
   last_name: "Adaramewa"
 )
 file = URI.open('https://www.artnews.com/wp-content/uploads/2020/02/9384254a.jpg?resize=400,271')
+
 puts 'Creating experiences'
 experience = Experience.create!(
   name: "Date at the Tate",
@@ -29,7 +31,9 @@ experience = Experience.create!(
   address: "Bankside, London SE1 9TG",
   user: user
 )
+
 experience.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+
 puts 'Creating experiences'
 Experience.create!(
   name: "Pizza East",
