@@ -95,19 +95,19 @@ body {
     display: flex;
     align-items: center;
   }
-  
+
   .card-product img {
     height: 100%;
     width: 120px;
     object-fit: cover;
   }
-  
+
   .card-product h2 {
     font-size: 16px;
     font-weight: bold;
     margin: 0;
   }
-  
+
   .card-product p {
     font-size: 12px;
     line-height: 1.4;
@@ -115,7 +115,7 @@ body {
     margin-bottom: 0;
     margin-top: 8px;
   }
-  
+
   .card-product .card-product-infos {
     padding: 16px;
   }
@@ -133,7 +133,7 @@ body {
 //     border-radius: 5px;
 //     box-shadow: 0 0 15px rgba(0,0,0,0.2);
 //   }
-  
+
 // //   .card-product {
 // //     overflow: hidden;
 // //     height: 120px;
@@ -142,19 +142,19 @@ body {
 // //     display: flex;
 // //     align-items: center;
 // //   }
-  
+
 //   .card-white img {
 //     height: 100%;
 //     width: 120px;
 //     object-fit: cover;
 //   }
-  
+
 //   .card-white h2 {
 //     font-size: 16px;
 //     font-weight: bold;
 //     margin: 0;
 //   }
-  
+
 //   .card-white p {
 //     font-size: 12px;
 //     line-height: 1.4;
@@ -215,15 +215,15 @@ body {
 //     grid-gap: 16px;
 //     padding: 16px;
 //   }
-  
+
 //   #map {
 //     height: 100vh;
 //     position: sticky;
 //     top: 0;
 //   }
-  
+
 //   /*Media Queries*/
-  
+
 //   /*Smallest device*/
 //   @media (min-width: 100px) and (max-width: 575px) {
 //     .cards {
@@ -233,7 +233,7 @@ body {
 //       display: none;
 //     }
 //   }
-  
+
 //   /*Small devices (landscape phones, 576px and up)*/
 //   @media (min-width: 576px) {
 //     .cards {
@@ -243,7 +243,7 @@ body {
 //       display: none;
 //     }
 //   }
-  
+
 //   /*Medium devices (tablets, 768px and up)*/
 //   @media (min-width: 1200px) {
 //     .cards {
@@ -258,37 +258,37 @@ body {
 //     border-radius: 0px;
 //     padding: 12px 100px;
 //   }
-  
+
 //   .card-product .card-product-infos {
 //     padding: 16px;
 //   }
-  
+
 //   /*card-trip*/
 //   .card-trip {
 //     overflow: hidden;
 //     background: white;
 //     box-shadow: 0 0 15px rgba(0,0,0,0.2);
 //   }
-  
+
 //   .card-trip > img {
 //     height: 200px;
 //     width: 100%;
 //     object-fit: cover;
 //   }
-  
+
 //   .card-trip h2 {
 //     font-size: 16px;
 //     font-weight: bold;
 //     margin: 0;
 //   }
-  
+
 //   .card-trip p {
 //     font-size: 12px;
 //     opacity: .7;
 //     margin: 0;
 //   }
-  
-  
+
+
 //   .card-trip .card-trip-infos {
 //     padding: 16px;
 //     display: flex;
@@ -296,7 +296,7 @@ body {
 //     align-items: flex-end;
 //     position: relative;
 //   }
-  
+
 //   .card-trip-infos .card-trip-user {
 //     position: absolute;
 //     right: 16px;
