@@ -34,9 +34,13 @@ h3 {
 //     grid-gap: 16px;
 //   }
 
+.experiences-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
 
-
-.container {
+.container{
   width: 800px;
   margin: auto;
 }
@@ -84,6 +88,7 @@ p {
 // .card-product .card-product-infos {
 //   padding: 16px;
 // }
+
 
 // .card-white {
 //     background-size: cover;
