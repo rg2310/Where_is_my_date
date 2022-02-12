@@ -1,9 +1,9 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
-  opacity: 0.3;
-  margin: 0 auto 0;
-  padding-top: 0px;
+  background: #ffffffb5;
+  opacity: 1;
+  font-family: "Nunito", "Helvetica", "sans-serif";
+  letter-spacing: 2px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -13,6 +13,12 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.navbar-lewagon li {
+  padding-left:30px;
+  padding-right:30px;
+}
+
 
 .transparent {
   position: absolute;

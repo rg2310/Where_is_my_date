@@ -1,7 +1,7 @@
-<div class="transparent navbar navbar-expand-sm navbar-light navbar-lewagon">
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
-      <%= image_tag "https://i.pinimg.com/564x/ae/61/67/ae6167679da5e54b2e7822b27848a9f3.jpg" %>
+    <%= link_to "/", class: "navbar-brand" do %>
+      <%= image_tag "https://media.istockphoto.com/vectors/heart-line-icon-outline-and-solid-vector-love-logo-linear-pictogram-vector-id1207877178?k=20&m=1207877178&s=170667a&w=0&h=NL-XYm8924jgx6TaSm1J3dXoHpOAcT43PaEKhNUD0jY=" %>
     <% end %>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,25 +10,25 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
-        <% if user_signed_in? %>
+        <%# <% if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "Home", "#", class: "nav-link" %>
+            <%= link_to "Home", "/", class: "nav-link" %>
           </li>
-          <li class="nav-item">
-            <%= link_to "Bookings", "#", class: "nav-link" %>
+           <li class="nav-item">
+            <%= link_to "Experiences", "/experiences", class: "nav-link" %>
           </li>
           <li class="nav-item dropdown">
-              <%= image_tag "https://avatars.githubusercontent.com/u/47426522?v=4", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
-              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+            <%= image_tag "https://media-exp1.licdn.com/dms/image/C4D03AQEeDt__IceKgA/profile-displayphoto-shrink_800_800/0/1610963974924?e=1649894400&v=beta&t=ce2kruwF7C1QNxjI9i9yp5lyLyXgXVyjuo8X_R8igZA", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <%= link_to "My bookings", "/profile", class: "dropdown-item" %>
+              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item"%>
             </div>
           </li>
-        <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-          </li>
-        <% end %>
+        <%# <% else %>
+          <!--li class="nav-item"-->
+            <%# <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+          <!--/li-->
+        <%# <% end %>
       </ul>
     </div>
   </div>

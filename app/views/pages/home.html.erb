@@ -1,8 +1,27 @@
-<%= video_tag "dating.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, class: "home_video" %>
+<div class="front-page">
+  <div>
+  <%= video_tag "dating.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, class: "home_video" %>
+  </div>
+</div>
+
 <div class="homepage-text">
-  <h1>PICK A DATE</h1>
+  <%# <h1>PICK A DATE</h1> %>
   <p>BOOK YOUR MOST MEMORABLE DATING EXPERIENCE YET</p>
 </div>
+
+
+<%= link_to "Take me to Dating Experiences", "/experiences", class: "button" %>
+
+
+<%# <%= simple_form_for :search, url: root_path, method: :get do |f| %>
+  <%# <div class="search-form-control form-group">
+    <input class="form-control string required" type="text" name="search[query]" id="search_query" />
+    <button name="button" type="submit" class="btn_btn_flat">
+      <i class="fas fa-search"></i> Search
+    </button>
+  </div>
+<% end %>
+
 
 <%# <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4))">
   <div class="container">
