@@ -59,6 +59,23 @@ p {
   opacity: 0.7;
 }
 
+.button-profile {
+  color: #7D7B7B;
+  font-family: "Nunito", "Helvetica", "sans-serif";
+  font-size: 15px;
+  border: 1px solid #0E0D0D;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: lighter;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.button-profile:hover {
+     background: #e5e2e5e5;
+     color: rgb(0, 0, 0);
+     text-decoration: wavy;
+}
+
 // img {
 //   width: 100%;
 //   object-fit: cover;
@@ -306,17 +323,3 @@ input[type="submit" i] {
 //     top: -20px;
 //     width: 40px;
 //  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
