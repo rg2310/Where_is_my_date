@@ -1,8 +1,28 @@
 h1,
-h2,
+h2 {
+  font-family: "Nunito", "Helvetica", "sans-serif";
+  color: #060606;
+}
 h3 {
   font-family: "Nunito", "Helvetica", "sans-serif";
-  color: #440A67;
+  color: #4b4949;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Nunito", "Helvetica", "sans-serif";
+  color: #4b4949;
+}
+
+h5 {
+  color: #807c7c;
+  font-style: italic;
+  font-size: 15px;
+  font-family: "Libre Franklin", "sans-serif";
+}
+
+.sub-heading {
+  margin-top: 30px;
 }
 
 
@@ -46,7 +66,7 @@ h3 {
 }
 
 p {
-  color: #93329E;
+  color: #030303;
   opacity: 0.7;
 }
 
@@ -138,6 +158,7 @@ p {
     overflow: hidden;
     background: white;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    margin: 10px 0px;
   }
 
   .card-trip > img {
