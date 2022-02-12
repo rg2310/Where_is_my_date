@@ -16,7 +16,7 @@ Experience.destroy_all
 # ronnie_scott = { name: "Ronnie Scott", content: "bla", price: 80, address: "47 Frith St, London W1D 4HT" }
 puts 'Creating 1 test user... pass testing'
 user = User.create!(
-  email: "testing7@testing.com",
+  email: "testing9@testing.com",
   password: "123456",
   first_name: "Temi",
   last_name: "Adaramewa"
