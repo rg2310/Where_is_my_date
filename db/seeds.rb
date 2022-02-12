@@ -16,12 +16,12 @@ Experience.destroy_all
 # ronnie_scott = { name: "Ronnie Scott", content: "bla", price: 80, address: "47 Frith St, London W1D 4HT" }
 puts 'Creating 1 test user... pass testing'
 user = User.create!(
-  email: "testing4@testing.com",
+  email: "testing9@testing.com",
   password: "123456",
   first_name: "Temi",
   last_name: "Adaramewa"
 )
-file = URI.open('https://www.artnews.com/wp-content/uploads/2020/02/9384254a.jpg?resize=400,271')
+file = URI.open('https://www.tate.org.uk/sites/default/files/styles/width-420/public/tate_britain_exterior_1.jpg')
 
 puts 'Creating experiences'
 experience = Experience.create!(
