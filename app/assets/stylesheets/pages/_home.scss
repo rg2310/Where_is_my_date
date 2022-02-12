@@ -47,12 +47,23 @@ body {
   font-weight: lighter;
   opacity: 0.8;
   transition: opacity 0.3s ease;
+  text-decoration: none;
 }
 
 .button:hover {
-     background: #ffe3fee5;
+     background: #fafafae1;
      color: rgba(0, 0, 0, 0.603);
-     text-decoration: wavy;
+     text-decoration: none;
+}
+
+.front-page {
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 
