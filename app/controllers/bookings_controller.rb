@@ -8,9 +8,10 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
+    raise
     @booking.user = current_user
     if @booking.save
-      redirect_to experience_bookings_path
+      redirect_to profile_path
     else
       render :new
     end
@@ -43,6 +44,6 @@ class BookingsController < ApplicationController
   end
 
   def booking_params
-    params.require(:booking).permit(:experience_id, :user_id, :date)
+    params.require(:booking).permit(:experience_id, :date, :number_of_participants)
   end
 end
