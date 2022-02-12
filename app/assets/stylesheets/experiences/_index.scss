@@ -1,11 +1,31 @@
 h1,
 h2,
-h3 {
+
+.title h3 {
   font-family: "Nunito", "Helvetica", "sans-serif";
-  color: #440A67;
+  color: #000000;
+  width: 700px;
+  margin-bottom: 16px;
+  padding-bottom: 26px;
+  border-bottom: 4px solid #E7E7EA;
 }
 
+.experiences-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
 
+.container{
+  width: 800px;
+  margin: auto;
+}
+
+p {
+  color: #93329E;
+  opacity: 0.7;
+
+}
 
 // .card-white {
 //     background-color: white;
@@ -34,16 +54,7 @@ h3 {
 //     grid-gap: 16px;
 //   }
 
-.experiences-container {
-  display: flex;
-  justify-content: center;
-  padding: 40px;
-}
 
-.container{
-  width: 800px;
-  margin: auto;
-}
 
 p {
   color: #93329E;
@@ -160,6 +171,7 @@ p {
     overflow: hidden;
     background: white;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    align-items: center;
   }
 
   .card-trip > img {

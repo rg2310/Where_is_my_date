@@ -1,3 +1,61 @@
-<% @bookings.each do |booking| %>
-<<%= booking %>>
-<% end %>
+<%# <%# <% @bookings.each do |booking|
+<%# <<%= booking %>
+<%# <% end %>
+
+<%#
+<div class="bookings">
+      <h3 class="sub-heading">YOUR BOOKINGS</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card-trip-infos">
+              <img src="https://www.tate.org.uk/sites/default/files/styles/width-720/public/images/people-on-the-millennium-br_0.jpg">
+            <div class="card-product-infos">
+              <h4><a href="/experiences/2">DATE AT THE TATE</a></h4>
+              <p>Booked on Feb 13</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-trip-infos">
+              <img src="https://cdn.londonandpartners.com/-/media/images/london/visit/things-to-do/nightlife/279177-ronnie-scotts-640x360.jpg?mw=640&hash=96AF3BCA8A353C22BA20FF074F584587BAADC2CE">
+            <div class="card-product-infos">
+              <h4><a href="/experiences/3">RONNIE SCOTT</a></h4>
+              <p>Booked on Jan 4</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+        </div> -->
+      </div>
+    </div> %>
+
+<div class="bookings">
+   <h3 class="sub-heading">YOUR BOOKINGS</h3>
+   <div class="container">
+   <div class="row">
+   <div class="col-12">
+   <div class="card-trip">
+      <img src="https://www.tate.org.uk/sites/default/files/styles/width-720/public/images/people-on-the-millennium-br_0.jpg">
+      <div class="card-trip-infos">
+      <div>
+      <h4><a href="/experiences/3">DATE AT THE TATE</a></h4>
+              <p>Booked on Feb 14</p>
+      </div>
+      <%= link_to "Book again?", "/experiences", class: "button-profile" %>
+    </div>
+    <div class="card-trip">
+      <img src="https://cdn.londonandpartners.com/-/media/images/london/visit/things-to-do/nightlife/279177-ronnie-scotts-640x360.jpg?mw=640&hash=96AF3BCA8A353C22BA20FF074F584587BAADC2CE">
+      <div class="card-trip-infos">
+      <div>
+      <h4><a href="/experiences/3">RONNIE SCOTT</a></h4>
+              <p>Booked on Jan 4</p>
+      </div>
+      <%= link_to "Book again?", "/experiences", class: "button-profile" %>
+    </div>
+    </div></div>
+   </div>
+
+
+<%# image_tag "https://www.tate.org.uk/sites/default/files/styles/width-720/public/images/people-on-the-millennium-br_0.jpg" %>
