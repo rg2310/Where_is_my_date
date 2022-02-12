@@ -16,11 +16,11 @@
        <h3>BOOKING</h3>
       <div class="fields">
       <%= simple_form_for([ @experience, @booking ]) do |f| %>
-  <%= f.input :date, as: :date, html5: true %>
-  <%= f.input :number_of_participants, as: :integer %>
-  <%# <%= f.button :submit %>
-<% end %>
-<%= link_to "submit", profile_path %>
+        <%= f.input :date, as: :date, html5: true %>
+        <%= f.input :number_of_participants, as: :integer %>
+        <%# <%= f.button :submit %>
+        <% end %>
+       <%= link_to "submit", profile_path %>
        <%# <form class = "simple_form new_booking" id="new_booking" novalidate="novalidate" action="experiences/1/bookings" accept-charset="UTF-8" method="post">
           <input type="hidden" name="authenticity_token" value="mSiWdmcYEm/SA1QmjSexwT8HCxS+23pFtItdqoufdjh1WM555Eu/RjaFrA5j5NoZz/latc1LEmjX/u488pDSKA==">
           <div class="form-group date required booking_date">
